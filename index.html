@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Catalog</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="./bootstrap-5.3.7-dist/css/bootstrap.css" />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+  
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./assetes/cart-shopping-solid-full.svg" alt="Cartzilla" />
+        </a>
+
+        <!-- Search Bar -->
+        <div class="d-flex flex-grow-1 mx-lg-4 my-2 my-lg-0">
+          <input
+            class="form-control search-input me-2"
+            type="search"
+            placeholder="Search The Product"
+            aria-label="Search"
+          />
+        </div>
+
+        <!-- Icons -->
+        <div class="nav-icons d-flex">
+          <i class="fas fa-cog"></i>
+          <i class="fas fa-user"></i>
+          <i class="far fa-heart"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button
+          class="navbar-toggler mx-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="./product_page.html">Procuct</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cart.html">Cart</a>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Shop
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Electronic Store</a></li>
+                <li><a class="dropdown-item" href="#">Fashion Store</a></li>
+                <li><a class="dropdown-item" href="#">Market Place</a></li>
+              </ul>
+            </li>
+         
+           
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Eng
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">العربية</a></li>
+                <li><a class="dropdown-item" href="#">Français</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                USD ($)
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">USD - $</a></li>
+                <li><a class="dropdown-item" href="#">EGP - ج.م</a></li>
+                <li><a class="dropdown-item" href="#">EUR - €</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+      <!-- Shop Catalog Header -->
+      <h2 class="shop-header">Shop catalog</h2>
+
+      <!-- Hero Banners -->
+      <div class="row mb-4">
+        <div class="col-lg-6 mb-3">
+          <div class="hero-iphone">
+            <img src="./assetes/iphone_hero.webp" alt="iPhone 14" />
+            <div>
+              <h3>iPhone 14</h3>
+              <p>Apple iPhone 14 128GB Blue</p>
+              <button class="btn btn-danger">From $899</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-3">
+          <div class="hero-ipad">
+            <div>
+              <i class="fab fa-apple"></i>
+              <p>Deal of the week</p>
+              <h3>iPad Pro M1</h3>
+            </div>
+            <img src="./assetes/ipad_hero.webp" alt="iPad Pro M1" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Toggle Button (Mobile Only) -->
+      <button
+        class="btn btn-outline-secondary btn-filter-toggle w-100"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#filtersOffcanvas"
+      >
+        <i class="fas fa-filter me-2"></i> Filters
+      </button>
+
+      <!-- Offcanvas Filters (Mobile) -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="filtersOffcanvas"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Filters</h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="filter-section">
+            <h6 class="filter-title">Status</h6>
+            <button class="btn btn-outline-secondary d-block w-100 mb-2">
+              % Sale
+            </button>
+            <button class="btn btn-outline-secondary d-block w-100 mb-2">
+              Same Day Delivery
+            </button>
+            <button class="btn btn-outline-secondary d-block w-100 mb-2">
+              Available to Order
+            </button>
+
+            <h6 class="filter-title">Categories</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"
+                  >Smartphones <span class="text-muted">(218)</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Accessories <span class="text-muted">(173)</span></a
+                >
+              </li>
+              <li>
+                <a href="#">Tablets <span class="text-muted">(45)</span></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Wearable Electronics <span class="text-muted">(140)</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Computers & Laptops <span class="text-muted">(205)</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Cameras, Photo & Video
+                  <span class="text-muted">(112)</span></a
+                >
+              </li>
+              <li>
+                <a href="#">Video Games <span class="text-muted">(89)</span></a>
+              </li>
+            </ul>
+
+            <h6 class="filter-title">Price</h6>
+            <label for="priceRangeMobile" class="form-label">$34 - $1250</label>
+            <input
+              type="range"
+              class="form-range"
+              min="34"
+              max="1250"
+              id="priceRangeMobile"
+            />
+
+            <h6 class="filter-title">Brand</h6>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="appleMobile"
+              />
+              <label class="form-check-label" for="appleMobile">Apple</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="asusMobile" />
+              <label class="form-check-label" for="asusMobile">Asus</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="dellMobile" />
+              <label class="form-check-label" for="dellMobile">Dell</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="cobraMobile"
+              />
+              <label class="form-check-label" for="cobraMobile">Cobra</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="boshMobile" />
+              <label class="form-check-label" for="boshMobile">Bosh</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="bangMobile" />
+              <label class="form-check-label" for="bangMobile"
+                >Bang & Olufsen</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="faxconnMobile"
+              />
+              <label class="form-check-label" for="faxconnMobile"
+                >Faxconn</label
+              >
+            </div>
+
+            <h6 class="filter-title">SSD Size</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="2tbMobile" />
+              <label class="form-check-label" for="2tbMobile">2 TB</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="1tbMobile" />
+              <label class="form-check-label" for="1tbMobile">1 TB</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="512gbMobile"
+              />
+              <label class="form-check-label" for="512gbMobile">512 GB</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="256gbMobile"
+              />
+              <label class="form-check-label" for="256gbMobile">256 GB</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="128gbMobile"
+              />
+              <label class="form-check-label" for="128gbMobile">128 GB</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="64gbMobile" />
+              <label class="form-check-label" for="64gbMobile"
+                >64 GB or less</label
+              >
+            </div>
+
+            <h6 class="filter-title">Color</h6>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="greenMobile"
+              />
+              <label class="form-check-label" for="greenMobile">
+                <span
+                  class="color-swatch"
+                  style="background-color: green"
+                ></span>
+                Green
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="coralMobile"
+              />
+              <label class="form-check-label" for="coralMobile">
+                <span
+                  class="color-swatch"
+                  style="background-color: coral"
+                ></span>
+                Coral Red
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="lightpinkMobile"
+              />
+              <label class="form-check-label" for="lightpinkMobile">
+                <span
+                  class="color-swatch"
+                  style="background-color: lightpink"
+                ></span>
+                Light Pink
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="skyblueMobile"
+              />
+              <label class="form-check-label" for="skyblueMobile">
+                <span
+                  class="color-swatch"
+                  style="background-color: skyblue"
+                ></span>
+                Sky Blue
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="blackMobile"
+              />
+              <label class="form-check-label" for="blackMobile">
+                <span
+                  class="color-swatch"
+                  style="background-color: black"
+                ></span>
+                Black
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="whiteMobile"
+              />
+              <label class="form-check-label" for="whiteMobile">
+                <span
+                  class="color-swatch"
+                  style="background-color: white; border: 1px solid #ccc"
+                ></span>
+                White
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Sidebar Filters (Desktop) -->
+        <div class="col-lg-3 filters-column">
+          <div class="filter-section">
+            <h6 class="filter-title">Status</h6>
+            <button class="btn btn-outline-secondary d-block w-100 mb-2">
+              % Sale
+            </button>
+            <button class="btn btn-outline-secondary d-block w-100 mb-2">
+              Same Day Delivery
+            </button>
+            <button class="btn btn-outline-secondary d-block w-100 mb-2">
+              Available to Order
+            </button>
+
+            <h6 class="filter-title">Categories</h6>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"
+                  >Smartphones <span class="text-muted">(218)</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Accessories <span class="text-muted">(173)</span></a
+                >
+              </li>
+              <li>
+                <a href="#">Tablets <span class="text-muted">(45)</span></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Wearable Electronics <span class="text-muted">(140)</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Computers & Laptops <span class="text-muted">(205)</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  >Cameras, Photo & Video
+                  <span class="text-muted">(112)</span></a
+                >
+              </li>
+              <li>
+                <a href="#">Video Games <span class="text-muted">(89)</span></a>
+              </li>
+            </ul>
+
+            <h6 class="filter-title">Price</h6>
+            <label for="priceRange" class="form-label">$34 - $1250</label>
+            <input
+              type="range"
+              class="form-range"
+              min="34"
+              max="1250"
+              id="priceRange"
+            />
+
+            <h6 class="filter-title">Brand</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="apple" />
+              <label class="form-check-label" for="apple">Apple</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="asus" />
+              <label class="form-check-label" for="asus">Asus</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="dell" />
+              <label class="form-check-label" for="dell">Dell</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="cobra" />
+              <label class="form-check-label" for="cobra">Cobra</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="bosh" />
+              <label class="form-check-label" for="bosh">Bosh</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="bang" />
+              <label class="form-check-label" for="bang">Bang & Olufsen</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="faxconn" />
+              <label class="form-check-label" for="faxconn">Faxconn</label>
+            </div>
+
+            <h6 class="filter-title">SSD Size</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="2tb" />
+              <label class="form-check-label" for="2tb">2 TB</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="1tb" />
+              <label class="form-check-label" for="1tb">1 TB</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="512gb" />
+              <label class="form-check-label" for="512gb">512 GB</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="256gb" />
+              <label class="form-check-label" for="256gb">256 GB</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="128gb" />
+              <label class="form-check-label" for="128gb">128 GB</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="64gb" />
+              <label class="form-check-label" for="64gb">64 GB or less</label>
+            </div>
+
+            <h6 class="filter-title">Color</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="green" />
+              <label class="form-check-label" for="green">
+                <span
+                  class="color-swatch"
+                  style="background-color: green"
+                ></span>
+                Green
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="coral" />
+              <label class="form-check-label" for="coral">
+                <span
+                  class="color-swatch"
+                  style="background-color: coral"
+                ></span>
+                Coral Red
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="lightpink" />
+              <label class="form-check-label" for="lightpink">
+                <span
+                  class="color-swatch"
+                  style="background-color: lightpink"
+                ></span>
+                Light Pink
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="skyblue" />
+              <label class="form-check-label" for="skyblue">
+                <span
+                  class="color-swatch"
+                  style="background-color: skyblue"
+                ></span>
+                Sky Blue
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="black" />
+              <label class="form-check-label" for="black">
+                <span
+                  class="color-swatch"
+                  style="background-color: black"
+                ></span>
+                Black
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="white" />
+              <label class="form-check-label" for="white">
+                <span
+                  class="color-swatch"
+                  style="background-color: white; border: 1px solid #ccc"
+                ></span>
+                White
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="col-lg-9">
+          <!-- First Row of Products -->
+          <div class="row mb-4">
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <img src="./assetes/01.webp" alt="VR Headset" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h6>Oculus Quest 2 VR Headset</h6>
+                <div class="price">$349.99</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <div class="sale-badge">Sale</div>
+                <img src="./assetes/02.webp" alt="iPhone" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h6>Apple iPhone 13 Pro 256GB</h6>
+                <div class="price">$999.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <img src="./assetes/03.webp" alt="Smart Watch" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <h6>Apple Watch Series 8 GPS</h6>
+                <div class="price">$399.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ///////// -->
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <img src="./assetes/05.webp" alt="Smart Watch" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <h6>Tablet Apple iPad Air M1</h6>
+                <div class="price">$540.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- //////// -->
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <img src="./assetes/06.webp" alt="Smart Watch" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <h6>Headphones Apple AirPods</h6>
+                <div class="price">$224.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- //////// -->
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <img src="./assetes/07.webp" alt="Smart Watch" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                g
+                <h6>Laptop Apple MacBook Pro 13</h6>
+                <div class="price">$1,200.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weekly Sale Banner -->
+          <div class="hero-sale mb-4">
+            <div>
+              <h3>SEASONAL WEEKLY SALE 2025</h3>
+              <p>
+                Use code <span class="sale-code">Sale 2025</span> to get best
+                offer
+              </p>
+            </div>
+            <img src="./assetes/iphone-2.webp" alt="iPhone Sale" />
+          </div>
+
+          <!-- Second Row of Products -->
+          <div class="row mb-4">
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <img src="./assetes/8.webp" alt="PS5 Controller" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h6>Sony PS5 DualSense Edge Controller</h6>
+                <div class="price">$199.99</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <div class="sale-badge">Sale</div>
+                <img src="./assetes/9.webp" alt="Laptop" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <h6>MacBook Air M2 Chip 13-inch</h6>
+                <div class="price">$1199.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <img src="./assetes/10.webp" alt="Earbuds" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h6>Apple AirPods Pro 2nd Generation</h6>
+                <div class="price">$249.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third Row of Products -->
+          <div class="row mb-4">
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <img src="./assetes/11.webp" alt="iPhone Blue" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h6>Apple iPhone 14 Pro 128GB</h6>
+                <div class="price">$999.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <img src="./assetes/12.webp" alt="AirPods" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <h6>Apple AirPods Max Wireless Headphones</h6>
+                <div class="price">$549.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <div class="sale-badge">Sale</div>
+                <img src="./assetes/13.webp" alt="MacBook" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h6>MacBook Pro 14-inch M2 Pro</h6>
+                <div class="price">$1999.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fourth Row of Products -->
+          <div class="row mb-4">
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <img src="./assetes/14.webp" alt="Camera" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <h6>Canon EOS Rebel T8i DSLR</h6>
+                <div class="price">$899.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <img src="./assetes/15.webp" alt="Speaker" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+                <h6>Sonos Beam Gen 2 Smart Soundbar</h6>
+                <div class="price">$449.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+              <div class="product-card">
+                <div class="sale-badge">Sale</div>
+                <img src="./assetes/05.webp" alt="Smartphone" />
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h6>Samsung Galaxy S23 Ultra 5G 256GB</h6>
+                <div class="price">$1199.00</div>
+                <div class="d-flex justify-content-between">
+                  <button class="btn btn-add">Add to cart</button>
+                  <button class="btn btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">10</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h4>Sign up to our newsletter</h4>
+            <p class="text-muted">
+              Stay up to date with the latest news, announcements, and special
+              offers
+            </p>
+            <div class="input-group newsletter-form mb-4">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your email"
+                aria-label="Your email"
+              />
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+            <div class="d-flex">
+              <i class="fab fa-facebook-f me-3"></i>
+              <i class="fab fa-twitter me-3"></i>
+              <i class="fab fa-instagram me-3"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="newsletter-item">
+                  <img src="./assetes/17.webp" alt="Tech News" />
+                  <div>
+                    <p class="mb-1">
+                      New Cool Gadgets You Must See on Cartzilla - Cheap Budget
+                    </p>
+                    <small class="text-muted">6:16</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="newsletter-item">
+                  <img src="./assetes/18.webp" alt="Sale News" />
+                  <div>
+                    <p class="mb-1">
+                      5 Super Useful Gadgets on Cartzilla You Must Have in 2025
+                    </p>
+                    <small class="text-muted">10:20</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="newsletter-item">
+                  <img src="./assetes/19.webp" alt="Tech Tips" />
+                  <div>
+                    <p class="mb-1">
+                      Top 5 New Amazing Gadgets on Cartzilla You Must See
+                    </p>
+                    <small class="text-muted">8:40</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5>Cartzilla</h5>
+            <p class="text-muted">Online marketplace for electronics</p>
+            <p class="text-muted">Got questions? Contact us 24/7</p>
+            <p class="text-white">+1 (800) 900-1234</p>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Affiliate program</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5>Account</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Create account</a></li>
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">App download</a></li>
+              <li><a href="#">Order tracking</a></li>
+              <li><a href="#">My orders</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5>Customer service</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">Payment methods</a></li>
+              <li><a href="#">Product returns</a></li>
+              <li><a href="#">Shipping information</a></li>
+              <li><a href="#">How to subscribe</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-0">&copy; 2023 Cartzilla. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="./bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
