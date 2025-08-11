@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartzilla - Shopping Cart</title>
+    <link rel="stylesheet" href="./cart.css">
+    <link href="./bootstrap-5.3.7-dist/css/bootstrap.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+ 
+  </head>
+  <body>
+     <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./assetes/cart-shopping-solid-full.svg" alt="Cartzilla" />
+        </a>
+
+        <!-- Search Bar -->
+        <div class="d-flex flex-grow-1 mx-lg-4 my-2 my-lg-0">
+          <input
+            class="form-control search-input me-2"
+            type="search"
+            placeholder="Search The Product"
+            aria-label="Search"
+          />
+        </div>
+
+        <!-- Icons -->
+        <div class="nav-icons d-flex">
+          <i class="fas fa-cog"></i>
+          <i class="fas fa-user"></i>
+          <i class="far fa-heart"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </nav>
+
+     <!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button
+          class="navbar-toggler mx-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="./product_page.html">Procuct</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cart.html">Cart</a>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Shop
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Electronic Store</a></li>
+                <li><a class="dropdown-item" href="#">Fashion Store</a></li>
+                <li><a class="dropdown-item" href="#">Market Place</a></li>
+              </ul>
+            </li>
+         
+           
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Eng
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">العربية</a></li>
+                <li><a class="dropdown-item" href="#">Français</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                USD ($)
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">USD - $</a></li>
+                <li><a class="dropdown-item" href="#">EGP - ج.م</a></li>
+                <li><a class="dropdown-item" href="#">EUR - €</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="container py-4">
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Shop</a></li>
+          <li class="breadcrumb-item active">Cart</li>
+        </ol>
+      </nav>
+
+      <!-- Shopping Cart -->
+      <h1 class="page-title">Shopping cart</h1>
+
+      <div class="row">
+        <!-- Cart Items -->
+        <div class="col-lg-8 mb-4 mb-lg-0">
+          <!-- Progress Bar -->
+          <div class="d-flex align-items-center mb-2 ">
+            <span class="text-muted"
+              >Your $499.00 order is eligible for FREE Shipping</span
+            >
+          </div>
+          <div class="progress mb-4">
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: 80%"
+            ></div>
+          </div>
+
+          <!-- Cart Table -->
+          <div class="cart-table">
+            <table class="table table-responsive mb-0">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Product 1 -->
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <div class="product-thumb">
+                        <img
+                          src="./assetes/20.webp"
+                          alt="iPhone"
+                        />
+                      </div>
+                      <div>
+                        <h6 class="product-title">Apple iPhone 13 128GB</h6>
+                        <div class="product-meta">Color: Blue</div>
+                        <div class="product-meta">Brand: Apple</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product-price">$899.00</div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <button class="btn-quantity me-2">-</button>
+                      <input
+                        type="text"
+                        class="form-control quantity-input"
+                        value="1"
+                      />
+                      <button class="btn-quantity ms-2">+</button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product-price">$899.00</div>
+                  </td>
+                </tr>
+
+                <!-- Product 2 -->
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <div class="product-thumb">
+                        <img
+                          src="./assetes/21.webp"
+                          alt="MacBook Pro"
+                        />
+                      </div>
+                      <div>
+                        <h6 class="product-title">TufGear Apple iPad Pro M2</h6>
+                        <div class="product-meta">Color: Black</div>
+                        <div class="product-meta">Brand: Apple</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product-price">
+                      $989.00 <span class="text-muted">$1099.00</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <button class="btn-quantity me-2">-</button>
+                      <input
+                        type="text"
+                        class="form-control quantity-input"
+                        value="1"
+                      />
+                      <button class="btn-quantity ms-2">+</button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product-price">$989.00</div>
+                  </td>
+                </tr>
+
+                <!-- Product 3 -->
+                <tr>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <div class="product-thumb">
+                        <img
+                          src="./assetes/22.webp"
+                          alt="Apple Watch"
+                        />
+                      </div>
+                      <div>
+                        <h6 class="product-title">Smart Watch Series 7</h6>
+                        <div class="product-meta">Color: Silver</div>
+                        <div class="product-meta">Brand: Apple</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product-price">$429.00</div>
+                  </td>
+                  <td>
+                    <div class="d-flex align-items-center">
+                      <button class="btn-quantity me-2">-</button>
+                      <input
+                        type="text"
+                        class="form-control quantity-input"
+                        value="1"
+                      />
+                      <button class="btn-quantity ms-2">+</button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="product-price">$429.00</div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Continue Shopping -->
+          <div class="mt-3">
+            <a href="#" class="btn-link">
+              <i class="fas fa-arrow-left me-1"></i> Continue shopping
+            </a>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="col-lg-4">
+          <div class="order-summary">
+            <h5 class="order-summary-title">Order summary</h5>
+
+            <div class="order-summary-item">
+              <span>Subtotal (3 items)</span>
+              <span>$2,317.00</span>
+            </div>
+
+            <div class="order-summary-item">
+              <span>Shipping</span>
+              <span>$0.00</span>
+            </div>
+
+            <div class="order-summary-item">
+              <span>Tax (estimated)</span>
+              <span>$73.48</span>
+            </div>
+
+            <div class="order-summary-item total">
+              <span>Total</span>
+              <span>$2,390.48</span>
+            </div>
+
+            <div class="mt-4">
+              <a href="#" class="btn btn-primary w-100">Proceed to checkout</a>
+            </div>
+
+            <div class="mt-3 text-center">
+              <a href="#" class="btn-link"
+                >Create an account and get 10% discount</a
+              >
+            </div>
+
+            <!-- Promo Code -->
+            <div class="promo-code">
+              <div class="accordion" id="promoCodeAccordion">
+                <div class="accordion-item border-0">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed px-0"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#promoCodeCollapse"
+                    >
+                      <i class="fas fa-tag me-2"></i> Apply promo code
+                    </button>
+                  </h2>
+                  <div
+                    id="promoCodeCollapse"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#promoCodeAccordion"
+                  >
+                    <div class="accordion-body px-0">
+                      <div class="input-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Promo code"
+                        />
+                        <button class="btn btn-outline-secondary" type="button">
+                          Apply
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trending Products -->
+      <section class="trending-section">
+        <h2 class="trending-title">Trending products</h2>
+
+        <div class="row">
+          <!-- Product 1 -->
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <div class="product-card-img">
+                <img src="./assetes/23.webp" alt="VR Headset" />
+              </div>
+              <div class="product-card-body">
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <span class="text-muted">(119)</span>
+                </div>
+                <h3 class="product-card-title">VIVO Virtual Reality Headset</h3>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="product-card-price">
+                    $340.99 <span class="text-muted">$399.99</span>
+                  </div>
+                  <button class="btn-add-to-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <div class="product-card-img">
+                <img src="./assetes/24.webp" alt="iPhone" />
+              </div>
+              <div class="product-card-body">
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span class="text-muted">(74)</span>
+                </div>
+                <h3 class="product-card-title">Apple iPhone 14 128GB (Blue)</h3>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="product-card-price">$899.00</div>
+                  <button class="btn-add-to-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <div class="product-card-img">
+                <img src="./assetes/25.webp" alt="Apple Watch" />
+              </div>
+              <div class="product-card-body">
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="text-muted">(31)</span>
+                </div>
+                <h3 class="product-card-title">Smart Watch Series 8 (White)</h3>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="product-card-price">$429.00</div>
+                  <button class="btn-add-to-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="col-6 col-md-3">
+            <div class="product-card">
+              <div class="product-card-img">
+                <img src="./assetes/26.webp" alt="MacBook Pro" />
+              </div>
+              <div class="product-card-body">
+                <div class="product-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>]
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <span class="text-muted">(97)</span>
+                </div>
+                <h3 class="product-card-title">
+                  Laptop Apple MacBook Pro 13 M2
+                </h3>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="product-card-price">$1,200.00</div>
+                  <button class="btn-add-to-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+
+  
+    </main>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h4>Sign up to our newsletter</h4>
+            <p class="text-muted">
+              Stay up to date with the latest news, announcements, and special
+              offers
+            </p>
+            <div class="input-group newsletter-form mb-4">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your email"
+                aria-label="Your email"
+              />
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+            <div class="d-flex">
+              <i class="fab fa-facebook-f me-3"></i>
+              <i class="fab fa-twitter me-3"></i>
+              <i class="fab fa-instagram me-3"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="newsletter-item">
+                  <img src="./assetes/17.webp" alt="Tech News" />
+                  <div>
+                    <p class="mb-1">
+                      New Cool Gadgets You Must See on Cartzilla - Cheap Budget
+                    </p>
+                    <small class="text-muted">6:16</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="newsletter-item">
+                  <img src="./assetes/18.webp" alt="Sale News" />
+                  <div>
+                    <p class="mb-1">
+                      5 Super Useful Gadgets on Cartzilla You Must Have in 2025
+                    </p>
+                    <small class="text-muted">10:20</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="newsletter-item">
+                  <img src="./assetes/19.webp" alt="Tech Tips" />
+                  <div>
+                    <p class="mb-1">
+                      Top 5 New Amazing Gadgets on Cartzilla You Must See
+                    </p>
+                    <small class="text-muted">8:40</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5>Cartzilla</h5>
+            <p class="text-muted">Online marketplace for electronics</p>
+            <p class="text-muted">Got questions? Contact us 24/7</p>
+            <p class="text-white">+1 (800) 900-1234</p>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Affiliate program</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5>Account</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Create account</a></li>
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">App download</a></li>
+              <li><a href="#">Order tracking</a></li>
+              <li><a href="#">My orders</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5>Customer service</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">Payment methods</a></li>
+              <li><a href="#">Product returns</a></li>
+              <li><a href="#">Shipping information</a></li>
+              <li><a href="#">How to subscribe</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-0">&copy; 2023 Cartzilla. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // Quantity Buttons
+      document.addEventListener("DOMContentLoaded", function () {
+        const minusBtns = document.querySelectorAll(
+          ".btn-quantity:first-child"
+        );
+        const plusBtns = document.querySelectorAll(".btn-quantity:last-child");
+
+        minusBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const input = this.nextElementSibling;
+            let value = parseInt(input.value);
+            if (value > 1) {
+              input.value = value - 1;
+            }
+          });
+        });
+
+        plusBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const input = this.previousElementSibling;
+            let value = parseInt(input.value);
+            input.value = value + 1;
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

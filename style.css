@@ -1,0 +1,317 @@
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #f8f9fa;
+        font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+      }
+
+      /* Header and Navigation */
+      .navbar-brand img {
+        width: 30px;
+        height: 30px;
+      }
+
+      .search-input {
+        background-color: #212529;
+        border: 1px solid #6c757d;
+        color: white;
+      }
+
+      .search-input::placeholder {
+        color: #6c757d;
+      }
+
+      .nav-icons i {
+        color: white;
+        margin: 0 10px;
+        font-size: 18px;
+      }
+
+      /* Shop Catalog Section */
+      .shop-header {
+        margin: 20px 0;
+      }
+
+      /* Hero Sections */
+      .hero-iphone {
+        background-color: #c8ddf5;
+        border-radius: 10px;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .hero-iphone img {
+        max-width: 50%;
+        height: auto;
+      }
+
+      .hero-ipad {
+        background-color: #fdd2f3;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .hero-ipad img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .hero-sale {
+        background-color: #c8ddf5;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+
+      .hero-sale img {
+        max-width: 30%;
+        height: auto;
+      }
+
+      .sale-code {
+        display: inline-block;
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #dee2e6;
+      }
+
+      /* Product Cards */
+      .product-card {
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .product-card img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        margin-bottom: 10px;
+      }
+
+      .product-card .rating {
+        color: #ffc107;
+        margin-bottom: 5px;
+      }
+
+      .product-card .price {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
+
+      .product-card .btn-add {
+        background-color: #f55266;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      .product-card .btn-add:hover {
+        background-color: #d14555;
+      }
+
+      .product-card .btn-wishlist {
+        background-color: transparent;
+        border: 1px solid #dee2e6;
+        color: #6c757d;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+
+      /* Filters */
+      .filter-section {
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+      }
+
+      .filter-title {
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 10px;
+      }
+
+      .filter-section ul li {
+        margin-bottom: 8px;
+      }
+
+      .filter-section a {
+        color: #212529;
+        text-decoration: none;
+      }
+
+      .filter-section a:hover {
+        color: #0d6efd;
+      }
+
+      .color-swatch {
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      /* Pagination */
+      .pagination .page-link {
+        color: #212529;
+      }
+
+      .pagination .active .page-link {
+        background-color: #212529;
+        border-color: #212529;
+      }
+
+      /* Newsletter */
+      .newsletter {
+        background-color: #f8f9fa;
+        padding: 30px 0;
+        margin-top: 30px;
+      }
+
+      .newsletter-form .form-control {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+
+      .newsletter-form .btn {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        background-color: #f55266;
+        border-color: #f55266;
+      }
+
+      .newsletter-form .btn:hover {
+        background-color: #d14555;
+        border-color: #d14555;
+      }
+
+      .newsletter-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .newsletter-item img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        margin-right: 15px;
+        border-radius: 5px;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #212529;
+        color: white;
+        padding: 40px 0 20px;
+      }
+
+      footer h5 {
+        margin-bottom: 20px;
+      }
+
+      footer ul {
+        padding-left: 0;
+      }
+
+      footer ul li {
+        margin-bottom: 10px;
+      }
+
+      footer a {
+        color: #adb5bd;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        color: white;
+        text-decoration: none;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #343a40;
+        padding-top: 20px;
+        margin-top: 20px;
+      }
+
+      .footer-bottom img {
+        height: 30px;
+      }
+
+      /* Sale Badge */
+      .sale-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #f55266;
+        color: white;
+        padding: 3px 8px;
+        border-radius: 3px;
+        font-size: 12px;
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 992px) {
+        .filters-column {
+          display: none;
+        }
+
+        .btn-filter-toggle {
+          display: block !important;
+          margin-bottom: 15px;
+        }
+      }
+
+      @media (min-width: 993px) {
+        .btn-filter-toggle {
+          display: none !important;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .hero-iphone,
+        .hero-ipad {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .hero-iphone img,
+        .hero-ipad img {
+          max-width: 70%;
+          margin-bottom: 15px;
+        }
+
+        .hero-sale {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .hero-sale img {
+          max-width: 50%;
+          margin-top: 15px;
+        }
+      }
+ 

@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.7-dist/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+   
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="./assetes/cart-shopping-solid-full.svg" alt="Cartzilla" />
+        </a>
+
+        <!-- Search Bar -->
+        <div class="d-flex flex-grow-1 mx-lg-4 my-2 my-lg-0">
+          <input
+            class="form-control search-input me-2"
+            type="search"
+            placeholder="Search The Product"
+            aria-label="Search"
+          />
+        </div>
+
+        <!-- Icons -->
+        <div class="nav-icons d-flex">
+          <i class="fas fa-cog"></i>
+          <i class="fas fa-user"></i>
+          <i class="far fa-heart"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button
+          class="navbar-toggler mx-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="./product_page.html">Procuct</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cart.html">Cart</a>
+            </li>
+          
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Shop
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Electronic Store</a></li>
+                <li><a class="dropdown-item" href="#">Fashion Store</a></li>
+                <li><a class="dropdown-item" href="#">Market Place</a></li>
+              </ul>
+            </li>
+         
+           
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Eng
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">العربية</a></li>
+                <li><a class="dropdown-item" href="#">Français</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                USD ($)
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">USD - $</a></li>
+                <li><a class="dropdown-item" href="#">EGP - ج.م</a></li>
+                <li><a class="dropdown-item" href="#">EUR - €</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Shop</a></li>
+          <li class="breadcrumb-item"><a href="#">Smartphones</a></li>
+          <li class="breadcrumb-item active">Apple iPhone 14 64GB Blue</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Product Main Section -->
+    <section class="product-main">
+      <div class="container">
+        <h1 class="product-title">Apple iPhone 14 64GB Blue</h1>
+
+        <div class="row">
+          <!-- Product Gallery -->
+          <div class="col-lg-6">
+            <div class="product-gallery">
+              <div class="main-image">
+                <img
+                  src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661026582322"
+                  alt="iPhone 14 Blue"
+                  id="main-product-image"
+                />
+              </div>
+              <div class="thumbnails">
+                <div
+                  class="thumbnail active"
+                  data-image="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661026582322"
+                >
+                  <img
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661026582322"
+                    alt="iPhone 14 Blue"
+                  />
+                </div>
+                <div
+                  class="thumbnail"
+                  data-image="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-storage-select-202209-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660691792367"
+                >
+                  <img
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-storage-select-202209-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660691792367"
+                    alt="iPhone 14 Blue Side"
+                  />
+                </div>
+                <div
+                  class="thumbnail"
+                  data-image="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-model-unselect-gallery-1-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753619946"
+                >
+                  <img
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-model-unselect-gallery-1-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753619946"
+                    alt="iPhone 14 Front"
+                  />
+                </div>
+                <div
+                  class="thumbnail"
+                  data-image="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-model-unselect-gallery-2-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753619948"
+                >
+                  <img
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-model-unselect-gallery-2-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753619948"
+                    alt="iPhone 14 Back"
+                  />
+                </div>
+                <div
+                  class="thumbnail"
+                  data-image="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-model-unselect-gallery-5-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753619949"
+                >
+                  <img
+                    src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-model-unselect-gallery-5-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753619949"
+                    alt="iPhone 14 Camera"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Info -->
+          <div class="col-lg-6">
+            <div class="product-info">
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#reviews" class="review-count">128 reviews</a>
+              </div>
+
+              <div class="price-container">
+                <span class="current-price">$799.00</span>
+                <span class="old-price">$899.00</span>
+                <span class="discount">-11%</span>
+              </div>
+
+              <div class="availability">
+                <span class="in-stock"
+                  ><i class="fas fa-check-circle"></i> In Stock</span
+                >
+                <span>Ships within 24 hours</span>
+              </div>
+
+              <div class="product-options">
+                <label class="option-label">Color</label>
+                <div class="color-options">
+                  <div
+                    class="color-option"
+                    style="background-color: #90c4e4"
+                    title="Blue"
+                  ></div>
+                  <div
+                    class="color-option active"
+                    style="background-color: #90c4e4"
+                    title="Blue"
+                  ></div>
+                  <div
+                    class="color-option"
+                    style="background-color: #c4b1ce"
+                    title="Purple"
+                  ></div>
+                  <div
+                    class="color-option"
+                    style="background-color: #1d1d1f"
+                    title="Midnight"
+                  ></div>
+                  <div
+                    class="color-option"
+                    style="background-color: #fbfbfd"
+                    title="Starlight"
+                  ></div>
+                  <div
+                    class="color-option"
+                    style="background-color: #eb5e55"
+                    title="Red"
+                  ></div>
+                </div>
+
+                <label class="option-label">Storage</label>
+                <div class="storage-options">
+                  <div class="storage-option active">64GB</div>
+                  <div class="storage-option">128GB</div>
+                  <div class="storage-option">256GB</div>
+                  <div class="storage-option">512GB</div>
+                </div>
+
+                <label class="option-label">Quantity</label>
+                <div class="quantity-selector">
+                  <button class="quantity-btn" id="decrease-quantity">-</button>
+                  <input
+                    type="number"
+                    class="quantity-input"
+                    value="1"
+                    min="1"
+                    max="10"
+                  />
+                  <button class="quantity-btn" id="increase-quantity">+</button>
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <button class="btn-add-to-cart">Add to Cart</button>
+                <button class="btn-wishlist">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+
+              <div class="shipping-info">
+                <div class="shipping-info-item">
+                  <i class="fas fa-truck"></i>
+                  <span>Free shipping on orders over $50</span>
+                </div>
+                <div class="shipping-info-item">
+                  <i class="fas fa-undo"></i>
+                  <span>30-day money-back guarantee</span>
+                </div>
+                <div class="shipping-info-item">
+                  <i class="fas fa-shield-alt"></i>
+                  <span>2-year warranty included</span>
+                </div>
+                <div class="shipping-info-item">
+                  <i class="fas fa-credit-card"></i>
+                  <span>Secure payment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Bought Together -->
+    <section class="frequently-bought">
+      <div class="container">
+        <h2 class="section-title">Frequently bought together</h2>
+
+        <div class="bundle-products">
+          <div class="bundle-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661026582322"
+              alt="iPhone 14"
+            />
+            <div class="bundle-product-title">iPhone 14 64GB Blue</div>
+            <div class="bundle-product-price">$799.00</div>
+          </div>
+
+          <div class="bundle-plus">+</div>
+
+          <div class="bundle-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1660803972361"
+              alt="AirPods Pro"
+            />
+            <div class="bundle-product-title">AirPods Pro (2nd Gen)</div>
+            <div class="bundle-product-price">$249.00</div>
+          </div>
+
+          <div class="bundle-plus">+</div>
+
+          <div class="bundle-product">
+            <img
+              src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MHLM3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1623348211000"
+              alt="MagSafe Charger"
+            />
+            <div class="bundle-product-title">MagSafe Charger</div>
+            <div class="bundle-product-price">$39.00</div>
+          </div>
+        </div>
+
+        <div class="bundle-total">
+          <div>
+            <span>Total price: </span>
+            <span class="bundle-total-price">$1,087.00</span>
+          </div>
+          <button class="btn-add-bundle">Add all to cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="product-details">
+      <div class="container">
+        <ul class="nav nav-tabs" id="productTabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="details-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#details"
+              type="button"
+            >
+              Details
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="specs-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#specs"
+              type="button"
+            >
+              Specifications
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="reviews-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#reviews"
+              type="button"
+            >
+              Reviews
+            </button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="productTabsContent">
+          <!-- Details Tab -->
+          <div class="tab-pane fade show active" id="details" role="tabpanel">
+            <h3>iPhone 14</h3>
+            <p>A total powerhouse.</p>
+            <p>
+              iPhone 14 has the same superspeedy chip that's in iPhone 13 Pro,
+              and features amazing all‑day battery life and a new Action mode
+              for super‑steady video.
+            </p>
+
+            <h4>Features</h4>
+            <ul>
+              <li>6.1-inch Super Retina XDR display</li>
+              <li>Advanced camera system for better photos in any light</li>
+              <li>Cinematic mode now in 4K Dolby Vision up to 30 fps</li>
+              <li>Action mode for smooth, steady, handheld videos</li>
+              <li>
+                Vital safety technology — Crash Detection calls for help when
+                you can't
+              </li>
+              <li>All-day battery life and up to 20 hours of video playback</li>
+              <li>
+                A15 Bionic chip with 5-core GPU for lightning-fast performance
+              </li>
+              <li>Superfast 5G cellular</li>
+              <li>
+                Industry-leading durability features with Ceramic Shield and
+                water resistance
+              </li>
+              <li>
+                iOS 16 offers even more ways to personalize, communicate, and
+                share
+              </li>
+            </ul>
+          </div>
+
+          <!-- Specifications Tab -->
+          <div class="tab-pane fade" id="specs" role="tabpanel">
+            <table class="specs-table">
+              <tr>
+                <td>Display</td>
+                <td>6.1-inch Super Retina XDR display</td>
+              </tr>
+              <tr>
+                <td>Resolution</td>
+                <td>2532 x 1170 pixels at 460 ppi</td>
+              </tr>
+              <tr>
+                <td>Processor</td>
+                <td>A15 Bionic chip with 5-core GPU</td>
+              </tr>
+              <tr>
+                <td>Storage</td>
+                <td>64GB, 128GB, 256GB, 512GB</td>
+              </tr>
+              <tr>
+                <td>Rear Camera</td>
+                <td>Dual 12MP camera system (Wide and Ultra Wide)</td>
+              </tr>
+              <tr>
+                <td>Front Camera</td>
+                <td>12MP TrueDepth front camera</td>
+              </tr>
+              <tr>
+                <td>Video Recording</td>
+                <td>4K video recording at 24 fps, 25 fps, 30 fps, or 60 fps</td>
+              </tr>
+              <tr>
+                <td>Battery</td>
+                <td>
+                  Up to 20 hours video playback, up to 80 hours audio playback
+                </td>
+              </tr>
+              <tr>
+                <td>Fast Charging</td>
+                <td>
+                  Up to 50% charge in around 30 minutes with 20W adapter or
+                  higher
+                </td>
+              </tr>
+              <tr>
+                <td>Operating System</td>
+                <td>iOS 16</td>
+              </tr>
+              <tr>
+                <td>Water Resistance</td>
+                <td>IP68 (maximum depth of 6 meters up to 30 minutes)</td>
+              </tr>
+              <tr>
+                <td>Dimensions</td>
+                <td>146.7 x 71.5 x 7.8 mm</td>
+              </tr>
+              <tr>
+                <td>Weight</td>
+                <td>172 grams</td>
+              </tr>
+              <tr>
+                <td>Colors</td>
+                <td>Blue, Purple, Midnight, Starlight, Red</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- Reviews Tab -->
+          <div class="tab-pane fade" id="reviews" role="tabpanel">
+            <div class="reviews-summary">
+              <div class="average-rating">
+                <div class="average-rating-value">4.5</div>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <div>128 reviews</div>
+              </div>
+
+              <div class="rating-bars">
+                <div class="rating-bar">
+                  <div class="rating-level">5 stars</div>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                  <div class="rating-percent">70%</div>
+                </div>
+                <div class="rating-bar">
+                  <div class="rating-level">4 stars</div>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 20%"></div>
+                  </div>
+                  <div class="rating-percent">20%</div>
+                </div>
+                <div class="rating-bar">
+                  <div class="rating-level">3 stars</div>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 5%"></div>
+                  </div>
+                  <div class="rating-percent">5%</div>
+                </div>
+                <div class="rating-bar">
+                  <div class="rating-level">2 stars</div>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 3%"></div>
+                  </div>
+                  <div class="rating-percent">3%</div>
+                </div>
+                <div class="rating-bar">
+                  <div class="rating-level">1 star</div>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 2%"></div>
+                  </div>
+                  <div class="rating-percent">2%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-list">
+              <div class="review-item">
+                <div class="review-header">
+                  <div>
+                    <div class="reviewer-name">James Wilson</div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="review-date">July 15, 2023</div>
+                </div>
+                <div class="review-content">
+                  <p>
+                    I've been using the iPhone 14 for about a month now and I'm
+                    extremely impressed with it. The camera quality is
+                    outstanding, especially in low light conditions. The battery
+                    life is also much better than my previous phone, easily
+                    lasting all day with heavy use. The new features in iOS 16
+                    work seamlessly with the hardware. Overall, this is the best
+                    iPhone I've owned.
+                  </p>
+                </div>
+                <div class="review-footer">
+                  <a href="#"><i class="far fa-thumbs-up"></i> Helpful (24)</a>
+                  <a href="#"><i class="far fa-comment"></i> Comment</a>
+                </div>
+              </div>
+
+              <div class="review-item">
+                <div class="review-header">
+                  <div>
+                    <div class="reviewer-name">Sarah Thompson</div>
+                    <div class="stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="review-date">June 28, 2023</div>
+                </div>
+                <div class="review-content">
+                  <p>
+                    The iPhone 14 is a solid upgrade from my iPhone 11. The
+                    display is noticeably better and the performance is snappy.
+                    Camera quality is excellent for everyday photos. My only
+                    complaint is that there isn't a huge difference from the 13
+                    model, so if you have that one, you might want to wait for
+                    the next generation. Battery life is good but not as amazing
+                    as Apple claims.
+                  </p>
+                </div>
+                <div class="review-footer">
+                  <a href="#"><i class="far fa-thumbs-up"></i> Helpful (17)</a>
+                  <a href="#"><i class="far fa-comment"></i> Comment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trending Products -->
+    <section class="trending-products">
+      <div class="container">
+        <h2 class="section-title">Trending products</h2>
+
+        <div class="row">
+          <div class="col-6 col-md-3 mb-4">
+            <div class="product-card position-relative">
+              <span class="badge-sale">SALE</span>
+              <div class="product-card-img">
+                <img
+                  src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQTW3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1673374526158"
+                  alt="JBL Flip 6 Portable Speaker"
+                />
+              </div>
+              <div class="product-card-body">
+                <h5 class="product-card-title">
+                  JBL Flip 6 Portable Waterproof Speaker
+                </h5>
+                <div class="product-card-price">$129.99</div>
+                <div class="product-card-footer">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mb-4">
+            <div class="product-card">
+              <div class="product-card-img">
+                <img
+                  src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-finish-select-202207-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1656712888128"
+                  alt="iPhone 13"
+                />
+              </div>
+              <div class="product-card-body">
+                <h5 class="product-card-title">iPhone 13 128GB Blue</h5>
+                <div class="product-card-price">$699.00</div>
+                <div class="product-card-footer">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mb-4">
+            <div class="product-card">
+              <div class="product-card-img">
+                <img
+                  src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MQD83?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1660803972361"
+                  alt="AirPods Pro"
+                />
+              </div>
+              <div class="product-card-body">
+                <h5 class="product-card-title">AirPods Pro (2nd Generation)</h5>
+                <div class="product-card-price">$249.00</div>
+                <div class="product-card-footer">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mb-4">
+            <div class="product-card position-relative">
+              <span class="badge-sale">SALE</span>
+              <div class="product-card-img">
+                <img
+                  src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-select-20220606?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1653084303665"
+                  alt="MacBook Air"
+                />
+              </div>
+              <div class="product-card-body">
+                <h5 class="product-card-title">
+                  MacBook Air M2 Chip 8GB 256GB
+                </h5>
+                <div class="product-card-price">$1,099.00</div>
+                <div class="product-card-footer">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Viewed Products -->
+    <section class="trending-products">
+      <div class="container">
+        <h2 class="section-title">Viewed products</h2>
+
+        <div class="row">
+          <div class="col-6 col-md-3 mb-4">
+            <div class="product-card position-relative">
+              <span class="badge-sale">SALE</span>
+              <div class="product-card-img">
+                <img
+                  src="https://m.media-amazon.com/images/I/61IG46p-yHL._SL1500_.jpg"
+                  alt="Xbox Controller"
+                />
+              </div>
+              <div class="product-card-body">
+                <h5 class="product-card-title">
+                  Xbox Wireless Controller - Robot White
+                </h5>
+                <div class="product-card-price">$59.99</div>
+                <div class="product-card-footer">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mb-4">
+            <div class="product-card">
+              <div class="product-card-img">
+                <img
+                  src="https://m.media-amazon.com/images/I/71Iefjfm9lL._AC_SL1500_.jpg"
+                  alt="Canon EOS R6"
+                />
+              </div>
+              <div class="product-card-body">
+                <h5 class="product-card-title">
+                  Canon EOS R6 Full-Frame Mirrorless Camera
+                </h5>
+                <div class="product-card-price">$2,499.00</div>
+                <div class="product-card-footer">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mb-4">
+            <div class="product-card position-relative">
+              <span class="badge-sale">SALE</span>
+              <div class="product-card-img">
+                <img
+                  src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-finish-select-202209-6-1inch-blue?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1661026582322"
+                  alt="iPhone 14"
+                />
+              </div>
+              <div class="product-card-body">
+                <h5 class="product-card-title">iPhone 14 128GB Blue</h5>
+                <div class="product-card-price">$799.00</div>
+                <div class="product-card-footer">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 mb-4">
+            <div class="product-card position-relative">
+              <span class="badge-sale">SALE</span>
+              <div class="product-card-img">
+                <img
+                  src="https://m.media-amazon.com/images/I/71PvHfU+pwL._AC_SL1500_.jpg"
+                  alt="Surface Laptop 5"
+                />
+              </div>
+              <div class="product-card-body">
+                <h5 class="product-card-title">
+                  Microsoft Surface Laptop 5 13.5"
+                </h5>
+                <div class="product-card-price">$999.99</div>
+                <div class="product-card-footer">
+                  <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </div>
+                  <button class="btn-wishlist">
+                    <i class="far fa-heart"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+     <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h4>Sign up to our newsletter</h4>
+            <p class="text-muted">
+              Stay up to date with the latest news, announcements, and special
+              offers
+            </p>
+            <div class="input-group newsletter-form mb-4">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your email"
+                aria-label="Your email"
+              />
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+            <div class="d-flex">
+              <i class="fab fa-facebook-f me-3"></i>
+              <i class="fab fa-twitter me-3"></i>
+              <i class="fab fa-instagram me-3"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="newsletter-item">
+                  <img src="./assetes/17.webp" alt="Tech News" />
+                  <div>
+                    <p class="mb-1">
+                      New Cool Gadgets You Must See on Cartzilla - Cheap Budget
+                    </p>
+                    <small class="text-muted">6:16</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="newsletter-item">
+                  <img src="./assetes/18.webp" alt="Sale News" />
+                  <div>
+                    <p class="mb-1">
+                      5 Super Useful Gadgets on Cartzilla You Must Have in 2025
+                    </p>
+                    <small class="text-muted">10:20</small>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="newsletter-item">
+                  <img src="./assetes/19.webp" alt="Tech Tips" />
+                  <div>
+                    <p class="mb-1">
+                      Top 5 New Amazing Gadgets on Cartzilla You Must See
+                    </p>
+                    <small class="text-muted">8:40</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- //////////// -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+            <h5>Cartzilla</h5>
+            <p class="text-muted">Online marketplace for electronics</p>
+            <p class="text-muted">Got questions? Contact us 24/7</p>
+            <p class="text-white">+1 (800) 900-1234</p>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5>Company</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Affiliate program</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5>Account</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Create account</a></li>
+              <li><a href="#">Sign in</a></li>
+              <li><a href="#">App download</a></li>
+              <li><a href="#">Order tracking</a></li>
+              <li><a href="#">My orders</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h5>Customer service</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">Payment methods</a></li>
+              <li><a href="#">Product returns</a></li>
+              <li><a href="#">Shipping information</a></li>
+              <li><a href="#">How to subscribe</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="mb-0">&copy; 2023 Cartzilla. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
